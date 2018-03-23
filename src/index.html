@@ -6,19 +6,91 @@
 	<meta name="robots" content="index, follow">
 	<meta name="description" content="Описание сайта"> 
 	<meta name="keywords" content="Ключевые слова">
-	<link rel="stylesheet" href="css/libs.min.css">
+	<!-- <link rel="stylesheet" href="css/libs.min.css"> -->
 	<link rel="stylesheet" href="css/style.css"> 
-	<title>Template</title>
+	<title>Calendar</title>
 	<!-- [if lt IE 9]>
 		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
 	<![endif]-->
 </head>
 <body>
-
+	<main class="wrap">
+		<!-- HEADER -->
+		<header class="header">
+			<div class="header__bar">
+				<button class="header__burger"></button>
+				<h2 class="header__month">March</h2>
+				<!-- YEAR -->
+				<div class="year">
+					<span class="year__cur">2018</span>
+					<div class="year-nav">
+						<span class="year-nav__prev"></span>
+						<span class="year-nav__next year-nav__next--disabled"></span>
+					</div>
+				</div>
+				<!-- //YEAR -->
+			</div>
+			<div class="header__main clear">
+				<!-- SEARCH -->
+				<form action="#" class="search clear">
+					<input type="text" placeholder="Search…" class="search__text">
+					<button class="search__btn"></button>
+				</form>
+				<!-- //SEARCH -->
+			</div>
+			<!-- WEEKDAYS -->
+			<ul class="weekdays">
+				<li class="weekdays__item">Sun</li>
+				<li class="weekdays__item">Mon</li>
+				<li class="weekdays__item weekdays__item--cur">Tuesday</li>
+				<li class="weekdays__item">Wed</li>
+				<li class="weekdays__item">Thu</li>
+				<li class="weekdays__item">Fri</li>
+				<li class="weekdays__item">Sat</li>
+			</ul>
+			<!-- //WEEKDAYS -->
+			<div class="week-nav">
+				<a href="#" class="week-nav__prev">Previous week</a>
+				<a href="#" class="week-nav__next">Next week</a>
+			</div>
+		</header>
+		<!-- //HEADER -->
+	</main>
+	<!-- SIDEBAR -->
+	<aside class="sidebar">
+		<!-- NEXT-MONTH -->
+		<header class="next-month">
+			<h2 class="next-month__title">Apr</h2>
+			<div class="next-month__bg"></div>
+		</header>
+		<!-- //NEXT-MONTH -->
+		<nav class="sidebar__nav">
+			<!-- MENU -->
+			<ul class="menu">
+				<li class="menu__item">
+					<a href="#" class="menu__link">Flowering</a>
+				</li>
+				<li class="menu__item">
+					<a href="#" class="menu__link">Tropical</a>
+				</li>
+				<li class="menu__item">
+					<a href="#" class="menu__link menu__link--locked">Trees</a>
+				</li>
+				<li class="menu__item">
+					<a href="#" class="menu__link menu__link--locked">Herbs</a>
+				</li>
+				<li class="menu__item">
+					<a href="#" class="menu__link">Fruit</a>
+				</li>
+			</ul>
+			<!-- //MENU -->
+		</nav>
+	</aside>
+	<!-- //SIDEBAR -->
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script src="js/libs.min.js"></script>
+	<!-- <script src="js/libs.min.js"></script> -->
 	<script src="js/main.js"></script>
 </body>
 </html> 

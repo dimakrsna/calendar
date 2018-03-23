@@ -2,9 +2,9 @@
 @import "mixins/_sprite-svg.less";
 
 
-/*-----------------
-/		SPRITE-PNG
-------------------*/
+//*-----------------
+//	 SPRITE-PNG
+//------------------*/
 
 //	Генерация всех иконок .png
 	// .sprites(@spritesheet-sprites);
@@ -17,22 +17,62 @@
 //		}
 //	}
 
-.icons-png {
-	max-width: @spritesheet-width;
-	display: inline-block;
-}
+// .icons-png {
+// 	max-width: @spritesheet-width;
+// 	display: inline-block;
+// }
 
 
 /*-----------------
-/		SPRITE-SVG
+/	SPRITE-SVG
 ------------------*/
 
-//   Пример генерации одной иконки .svg
-//   .iconName {
-//   	.iconName();
-//   }
-
-.icons-svg {
-	background: url(@sprite-svg-path);
+.sprite-svg(){
 	display: inline-block;
+	background-image: url(@sprite-svg-path);
+	content: '';
+}
+
+.header__burger {
+
+	&:before {
+		.burger();
+	}
+}
+
+.year-nav__prev {
+
+	&:before{
+		.year-prev();
+	}
+
+	&--disabled {
+		cursor: default !important;
+
+		&:before{
+			.year-prev-disabled();
+		}
+	}
+}
+
+.year-nav__next {
+
+	&:before{
+		.year-next();
+	}
+
+	&--disabled {
+		cursor: default !important;
+
+		&:before{
+			.year-next-disabled();
+		}
+	}
+}
+
+.search__btn {
+
+	&:before {
+		.search-icon();
+	}
 }

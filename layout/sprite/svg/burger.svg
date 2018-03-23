@@ -1,0 +1,57 @@
+<svg id="burger" xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c140 79.160451, 2017/05/06-01:08:21        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1 {
+        fill: #e1ba6a;
+      }
+
+      .cls-1, .cls-3 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        opacity: 0.5;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-width: 2.5px;
+      }
+    </style>
+  </defs>
+  <path id="burger-base" class="cls-1" d="M676,968h31a12.988,12.988,0,0,1,13,13v18a12.987,12.987,0,0,1-13,13H676V968h0Z" transform="translate(-676 -968)"/>
+  <g id="burger-lines" class="cls-2">
+    <path id="Line_2" data-name="Line 2" class="cls-3" d="M702.647,985.636H691.353" transform="translate(-676 -968)"/>
+    <path id="Line_2_Copy" data-name="Line 2 Copy" class="cls-3" d="M702.647,994.364h-6.353" transform="translate(-676 -968)"/>
+  </g>
+</svg>

@@ -1,21 +1,13 @@
 {
-  "name": "calendar",
+  "name": "template",
   "version": "1.0.0",
-  "description": "Пример верстки",
+  "description": "Template for new project",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dimakrsna/calendar.git"
-  },
-  "author": "dimakrsna <dimakrsna@gmail.com>",
+  "author": "Dima Borschov dimakrsna@gmail.com",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/dimakrsna/calendar/issues"
-  },
-  "homepage": "https://github.com/dimakrsna/calendar#readme",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-preset-env": "^1.6.0",
@@ -37,6 +29,6 @@
     "gulp-uglify": "^3.0.0",
     "gulp-uglifyjs": "^0.6.2",
     "gulp.spritesmith": "^6.5.1",
-    "gulp-tinypng-extended": "^1.5.0"
+    "gulp-tinypng-extended" : "^1.5.0"
   }
 }

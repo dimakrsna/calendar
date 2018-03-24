@@ -2,25 +2,25 @@
 @import "mixins/_sprite-svg.less";
 
 
-//*-----------------
-//	 SPRITE-PNG
-//------------------*/
+/*-----------------
+/	 SPRITE-PNG
+------------------*/
 
-//	Генерация всех иконок .png
-	// .sprites(@spritesheet-sprites);
+.cover__img--1 {
+	.sprite(@cover-1);
+}
 
+.cover__img--2 {
+	.sprite(@cover-2);
+}
 
-//	 Пример генерации одной иконки .png
-//	.iconName {
-//		&:after {
-//			.sprite(@iconName);
-//		}
-//	}
+.cover__img--3 {
+	.sprite(@cover-3);
+}
 
-// .icons-png {
-// 	max-width: @spritesheet-width;
-// 	display: inline-block;
-// }
+.cover__img--4 {
+	.sprite(@cover-4);
+}
 
 
 /*-----------------
@@ -31,7 +31,7 @@
 	display: inline-block;
 	background-image: url(@sprite-svg-path);
 	content: '';
-}
+} 
 
 .header__burger {
 
@@ -76,3 +76,17 @@
 		.search-icon();
 	}
 }
+
+.text-icon {
+
+	.sprite-svg();
+
+	&--1 {
+		.water();
+	}
+
+	&--2 {
+		.pot();
+	}
+}
+

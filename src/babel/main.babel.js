@@ -5,6 +5,7 @@ $(function(){
 		init: function(){
 			this.mainMenu();
 			this.tooltips();
+			this.filter();
 		},
 
 		mainMenu: function(){
@@ -69,6 +70,12 @@ $(function(){
             $(".grid__day").each(function(ind, element){
                 toggleTooltip(element);
             });
+		},
+
+		filter: function(){
+			let $filter = $("#filter"),
+				$link= $(".nav__link");
+
 		}
 	}
 

@@ -19,7 +19,7 @@
 		<!-- HEADER -->
 		<header class="header">
 			<div class="header__bar">
-				<button class="header__burger"></button>
+				<button class="header__burger" id="menuOpen"></button>
 				<h2 class="header__month">March</h2>
 				<!-- YEAR -->
 				<div class="year">
@@ -99,10 +99,10 @@
 				<!-- //day -->
 				<!-- day -->
 				<section class="grid__day">
-					<a href="#" class="cover cover--orange">
+					<div class="cover cover--orange">
 						<span class="counter counter--orange">2 +</span>
 						<span class="cover__img cover__img--1"></span>
-					</a>
+					</div>
 					<h5 class="date date--state-3">
 						<span class="date__num">16</span>
 					</h5>
@@ -133,21 +133,22 @@
 				<!-- //day -->
 				<!-- day -->
 				<section class="grid__day">
-					<a href="#" class="cover cover--green">
+					<div class="cover cover--green">
 						<span class="counter counter--green">1 +</span>
 						<span class="cover__img cover__img--2"></span>
-					</a>
+					</div>
+
 					<h5 class="date date--state-2">
 						<span class="date__num">20</span>
 					</h5>
 				</section>				
 				<!-- //day -->
 				<!-- day -->
-				<section class="grid__day tooltip-is-open">
-					<a href="#" class="cover cover--orange">
+				<section class="grid__day">
+					<div class="cover cover--orange">
 						<span class="counter counter--orange">4 +</span>
 						<span class="cover__img cover__img--3"></span>
-					</a>
+					</div>
 					<!-- TOOLTIP -->
 					<div class="tooltip">
 						<h3 class="tooltip__title">Graptoveria 'Debbie'</h3>
@@ -237,10 +238,10 @@
 				<!-- //day -->
 				<!-- day -->
 				<section class="grid__day">
-					<a href="#" class="cover cover--green">
+					<div class="cover cover--green">
 						<span class="counter counter--green">2 +</span>
 						<span class="cover__img cover__img--4"></span>
-					</a>
+					</div>
 					<h5 class="date date--state-2">
 						<span class="date__num">31</span>
 					</h5>
@@ -282,8 +283,8 @@
 	</aside>
 	<!-- //SIDEBAR -->
 	<!-- MENU -->
-	<nav class="menu">
-		<button class="menu__close"></button>
+	<nav class="menu" id="menu">
+		<button class="menu__close" id="menuClose"></button>
 		<ul class="menu__list">
 			<li class="menu__item">
 				<a href="#" class="menu__link">

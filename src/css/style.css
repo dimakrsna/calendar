@@ -728,6 +728,9 @@ body {
   left: -23px;
   bottom: 6px;
   border-radius: 50%;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .cover--green {
@@ -745,6 +748,10 @@ body {
   top: -35px;
   left: -5px;
   font: 1em 'CircularStd-Bold';
+  opacity: 1;
+  -webkit-transition: 0.15s ease-out;
+  -o-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
 }
 
 .counter--orange {
@@ -759,22 +766,37 @@ body {
 /*TOOLTIP*/
 
 .tooltip {
+  display: none;
   position: absolute;
   z-index: 50;
   left: 20px;
   top: -25px;
-  width: 420px;
+  width: 0;
   min-height: 215px;
   padding: 45px 50px 40px 85px;
+  overflow: hidden;
+  opacity: 0;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 10px 39.2px 0.8px rgba(63, 52, 0, 0.1);
   box-shadow: 0px 10px 39.2px 0.8px rgba(63, 52, 0, 0.1);
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+  -webkit-transition-delay: .2s;
+  -o-transition-delay: .2s;
+  transition-delay: .2s;
 }
 
 .tooltip__title {
+  width: 280px;
   margin-bottom: 40px;
   font: 1.375em 'CircularStd-Bold';
   color: #638755;
+}
+
+.tooltip-is-open .tooltip {
+  width: 420px;
+  opacity: 1;
 }
 
 .tooltip-is-open .cover__img {
@@ -787,7 +809,25 @@ body {
   transform: scale(1.5);
 }
 
+.tooltip-is-open .counter {
+  opacity: 0;
+}
+
+.tooltip-is-open .descripton {
+  opacity: 1;
+}
+
 /*DESCRIPTON*/
+
+.descripton {
+  opacity: 0;
+  -webkit-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+  -webkit-transition-delay: .5s;
+  -o-transition-delay: .5s;
+  transition-delay: .5s;
+}
 
 .descripton__item {
   position: relative;
@@ -814,10 +854,18 @@ body {
 
 .menu {
   position: fixed;
+  top: 0;
+  left: -87%;
   z-index: 200;
   width: 87%;
   height: 100%;
   background: #4b633a url("../img/menu-bg.jpg");
+  -webkit-transition: all .8s ease;
+  -o-transition: all .8s ease;
+  transition: all .8s ease;
+  -webkit-transition-delay: .2s;
+  -o-transition-delay: .2s;
+  transition-delay: .2s;
 }
 
 .menu__close {
@@ -930,9 +978,9 @@ body {
   -webkit-transition: all .9s ease;
   -o-transition: all .9s ease;
   transition: all .9s ease;
-  -webkit-transition-delay: .2s;
-  -o-transition-delay: .2s;
-  transition-delay: .2s;
+  -webkit-transition-delay: .3s;
+  -o-transition-delay: .3s;
+  transition-delay: .3s;
 }
 
 .menu__counter {
@@ -949,6 +997,10 @@ body {
   font-size: 16px;
   line-height: 36px;
   color: #ebca87;
+}
+
+.menu-is-open {
+  left: 0;
 }
 
 /*SOCIAL*/

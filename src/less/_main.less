@@ -10,6 +10,7 @@ body {
 	display: flex;
 }
 
+
 /*WRAP*/
 .wrap {
 	display: flex;
@@ -402,6 +403,7 @@ body {
 		left: -23px;
 		bottom: 6px;
 		border-radius: 50%;
+		transition: all 0.5s;
 	}
 
 	&--green {
@@ -419,6 +421,8 @@ body {
 	top: -35px;
 	left: -5px;
 	font: @16 @font-bold;
+	opacity: 1;
+	.transition(0.15s);
 
 	&--orange {
 		color: #d0d5a8;
@@ -432,18 +436,24 @@ body {
 
 /*TOOLTIP*/
 .tooltip {
-	// display: none;
+	display: none;
 	position: absolute;
 	z-index: 50;
 	left: 20px;
 	top: -25px;
-	width: 420px;
+	width: 0;
 	min-height: 215px;
 	padding: 45px 50px 40px 85px;
+	overflow: hidden;
+	opacity: 0;
 	background-color: rgb(255, 255, 255);
 	box-shadow: 0px 10px 39.2px 0.8px rgba(63, 52, 0, 0.1);
+	transition: all .5s ease;
+	transition-delay: .2s;
+	
 
 	&__title {
+		width: 280px;
 		margin-bottom: 40px;
 		font: @22 @font-bold;
 		color: #638755;
@@ -452,6 +462,12 @@ body {
 
 
 .tooltip-is-open {
+	
+	.tooltip {
+		width: 420px;
+		opacity: 1;
+	}
+	
 	.cover__img {
 		z-index: 150;
 		width: 54px;
@@ -459,10 +475,21 @@ body {
 		border: 2px solid rgb(182, 194, 176);
 		transform: scale(1.5);
 	}
+
+	.counter {
+		opacity: 0;
+	}
+
+	.descripton {
+		opacity: 1;
+	}
 }
 
 /*DESCRIPTON*/
 .descripton {
+	opacity: 0;
+	transition: opacity 1s;
+	transition-delay: .5s;
 
 	&__item {
 		position: relative;
@@ -487,12 +514,15 @@ body {
 
 /*MENU*/
 .menu {
-	// display: none;
 	position: fixed;
+	top: 0;
+	left: -87%;
 	z-index: 200;
 	width: 87%;
 	height: 100%;
 	background: #4b633a url("../img/menu-bg.jpg");
+	transition: all .8s ease;
+	transition-delay: .2s;
 
 	&__close {
 		position: absolute;
@@ -588,7 +618,7 @@ body {
 		content: '';
 		background: #e3b24b;
 		transition: all .9s ease;
-		transition-delay: .2s;
+		transition-delay: .3s;
 	}
 
 	&__counter {
@@ -606,6 +636,10 @@ body {
 		line-height: 36px;
 		color: #ebca87;
 	}
+}
+
+.menu-is-open {
+	left: 0;
 }
 
 /*SOCIAL*/

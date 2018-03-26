@@ -38,5 +38,8 @@
     "gulp-uglifyjs": "^0.6.2",
     "gulp.spritesmith": "^6.5.1",
     "gulp-tinypng-extended": "^1.5.0"
+  },
+  "dependencies": {
+    "phantomjs": "^2.1.7"
   }
 }

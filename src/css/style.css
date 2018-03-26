@@ -860,6 +860,7 @@ body {
   width: 87%;
   height: 100%;
   background: #4b633a url("../img/menu-bg.jpg");
+  background-size: cover;
   -webkit-transition: all .8s ease;
   -o-transition: all .8s ease;
   transition: all .8s ease;
